@@ -1,4 +1,21 @@
+body{
+  font-family: "Roboto, RobotoDraft, Helvertica, Arial, sans-serif";
+  background-color:rgba(228, 192, 237, 0.177);
+}
+
 .card{
-  /* width: 288px; */
-  background-color: red;
+  width: 590px;
+  background-color:white;
+  box-shadow: 1px 1px 10px gray;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+tr{
+  border: 1px solid transparent;
+}
+
+[type="text"]{border-color: transparent transparent black transparent;
+  background-color: transparent;
+  border-width: 2px;
 }
