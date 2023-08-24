@@ -19,3 +19,53 @@ tr{
   background-color: transparent;
   border-width: 2px;
 }
+
+/* Apply the custom styles to the range input */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #37a45e;
+  border-radius: 8px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  /* background-color: #3498db; */
+  border: 2px solid #f4f0f0;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+button.btn-danger{
+  color: blueviolet;
+  background-color: transparent;
+  border:1px solid transparent;
+  
+}
+
+button.btn-danger:hover{
+  background-color: rgba(134, 204, 231,0.1);
+  color: blueviolet;
+  border:1px solid transparent;
+}
+
+footer p{
+  font-size: 12px;
+  color: gray;
+}
+
+p a{
+  color: gray;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .card{
+    width: 99.7vw;
+  }
+
+  .submitBtn{
+    flex-wrap: wrap;
+  }
+  
+}

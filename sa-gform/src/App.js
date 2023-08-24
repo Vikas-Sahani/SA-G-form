@@ -225,37 +225,37 @@ function App() {
               <tr>
                 <th scope="row">Row 1</th>
                 <td>
-                  <input type="radio" />
+                  <input type="radio" name="radioBoxGridR1" />
                 </td>
                 <td>
-                  <input type="radio" />
+                  <input type="radio" name="radioBoxGridR1" />
                 </td>
                 <td>
-                  <input type="radio" />
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">Row 2</th>
-                <td>
-                  <input type="radio" />
-                </td>
-                <td>
-                  <input type="radio" />
-                </td>
-                <td>
-                  <input type="radio" />
+                  <input type="radio" name="radioBoxGridR1" />
                 </td>
               </tr>
               <tr>
                 <th scope="row">Row 2</th>
                 <td>
-                  <input type="radio" />
+                  <input type="radio" name="radioBoxGridR2" />
                 </td>
                 <td>
-                  <input type="radio" />
+                  <input type="radio" name="radioBoxGridR2" />
                 </td>
                 <td>
-                  <input type="radio" />
+                  <input type="radio" name="radioBoxGridR2" />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Row 2</th>
+                <td>
+                  <input type="radio" name="radioBoxGridR3" />
+                </td>
+                <td>
+                  <input type="radio" name="radioBoxGridR3" />
+                </td>
+                <td>
+                  <input type="radio" name="radioBoxGridR3" />
                 </td>
               </tr>
             </tbody>
@@ -285,37 +285,37 @@ function App() {
               <tr>
                 <th scope="row">Row 1</th>
                 <td>
-                  <input type="checkbox" />
+                  <input type="checkbox" name="tickBoxGr" />
                 </td>
                 <td>
-                  <input type="checkbox" />
+                  <input type="checkbox" name="tickBoxGr" />
                 </td>
                 <td>
-                  <input type="checkbox" />
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">Row 2</th>
-                <td>
-                  <input type="checkbox" />
-                </td>
-                <td>
-                  <input type="checkbox" />
-                </td>
-                <td>
-                  <input type="checkbox" />
+                  <input type="checkbox" name="tickBoxGr" />
                 </td>
               </tr>
               <tr>
                 <th scope="row">Row 2</th>
                 <td>
-                  <input type="checkbox" />
+                  <input type="checkbox" name="tickBoxGr" />
                 </td>
                 <td>
-                  <input type="checkbox" />
+                  <input type="checkbox" name="tickBoxGr" />
                 </td>
                 <td>
-                  <input type="checkbox" />
+                  <input type="checkbox" name="tickBoxGr" />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Row 2</th>
+                <td>
+                  <input type="checkbox" name="tickBoxGr" />
+                </td>
+                <td>
+                  <input type="checkbox" name="tickBoxGr" />
+                </td>
+                <td>
+                  <input type="checkbox" name="tickBoxGr" />
                 </td>
               </tr>
             </tbody>
@@ -326,6 +326,41 @@ function App() {
             <Required errorTxt="This question requires at least one response per row" />
           )}
         </div>
+
+        {/* Submit */}
+        <div className="d-flex justify-content-between align-items-center submitBtn">
+          <button className="btn btn-primary ">Submit</button>
+          <label for="points">
+            <input
+              type="range"
+              id="points"
+              name="points"
+              min="0"
+              max="10"
+              // disabled
+            />
+            &nbsp; &nbsp; Page 1 of 1
+          </label>
+          <button className="btn btn-danger">clear form</button>
+        </div>
+
+        {/* footer */}
+        <footer>
+          <p>Never submit passwords through Google Forms.</p>
+          <p className="text-end ">
+            This content is neither created nor endorsed by Google.{" "}
+            <a href="#">Report Abuse </a>- <a href="#">Terms of Service</a> -{" "}
+            <a href="#">Privacy Policy</a>
+          </p>
+          <h4 className="text-center ">
+            <a
+              href="https://www.google.com/forms/about/?utm_source=product&utm_medium=forms_logo&utm_campaign=forms"
+              className="text-secondary text-decoration-none "
+            >
+              <span className="fw-bold">Google</span> Forms
+            </a>
+          </h4>
+        </footer>
       </div>
     </div>
   );
