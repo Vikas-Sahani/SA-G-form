@@ -7,7 +7,7 @@ import { BsExclamationCircle } from "react-icons/bs";
 import { BsUpload } from "react-icons/bs";
 
 import "./App.css";
-import { useState } from "react";
+// import { useState } from "react";
 
 const Required = (props) => {
   return (
@@ -22,10 +22,11 @@ const Required = (props) => {
   );
 };
 
-const handleFocus = () => {};
+// const handleFocus = () => {};
 
 function App() {
-  const [isMCQ, setIsMCQ] = useState(true);
+  // const [isMCQ, setIsMCQ] = useState(true);
+  const isMCQ = "";
 
   return (
     <div className="App d-flex justify-content-center ">
@@ -349,8 +350,29 @@ function App() {
           <p>Never submit passwords through Google Forms.</p>
           <p className="text-end ">
             This content is neither created nor endorsed by Google.{" "}
-            <a href="#">Report Abuse </a>- <a href="#">Terms of Service</a> -{" "}
-            <a href="#">Privacy Policy</a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfj-lonvcKnXZz3cbydIaCqYtK7a4-g8pqsICFg7_sGGcODJQ/reportabuse?source=https://docs.google.com/forms/d/e/1FAIpQLSfj-lonvcKnXZz3cbydIaCqYtK7a4-g8pqsICFg7_sGGcODJQ/viewform"
+            >
+              Report Abuse{" "}
+            </a>
+            -{" "}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://policies.google.com/terms"
+            >
+              Terms of Service
+            </a>{" "}
+            -{" "}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://policies.google.com/privacy"
+            >
+              Privacy Policy
+            </a>
           </p>
           <h4 className="text-center ">
             <a
